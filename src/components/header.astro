@@ -1,0 +1,216 @@
+<header class="container header">
+  <div class="header-wrapper">
+    <div class="header-first_grid">
+      <div class="header-title" >
+        <div class= "header-title_logo">
+          <svg width="33.000000" height="33.000000" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs/>
+            <path id="Star 1" d="M16 0L13.77 10.89L5.07 3.97L10.37 13.75L-0.75 14.04L9.6 18.12L1.27 25.5L11.82 21.97L10.18 32.97L16 23.49L21.81 32.97L20.17 21.97L30.72 25.5L22.39 18.12L32.74 14.04L21.62 13.75L26.92 3.97L18.22 10.89L16 0Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+          </svg>  
+          <h1>Influenzilla</h1>
+        </div>
+        <p>bespoke design and <br> marketing services</p>
+      </div>
+      <a href="">About</a>
+      <a href="">Servises</a>
+      <a href="">Cases</a>
+      <a href="">Team</a>
+      <a href="">Logo</a>
+    </div>
+    <div class="header-second_grid">
+      <a href="#"></a>
+      <a href="">Boost program</a>
+      <a href="">products</a>
+      <a href="">Book</a>
+      <a href="">Blog</a>
+    </div>
+  </div>
+</header>
+
+<style>
+:root {
+  --border-xs: 1px;
+  --border-sm: 2px;
+}
+
+.header {
+  display: grid;
+  justify-content: center;
+}
+
+.header-wrapper {
+  margin-top: 3rem;
+}
+
+div a {
+  font-size: var(--font-md);
+  line-height: 0.94rem;
+  border: var(--border-xs) var(--clr-white) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+a:hover {
+  border: ;
+}
+
+ .header-title {
+  border: var(--border-sm) solid var(--clr-white);
+  padding-top: 4rem;
+  display: flex;
+  color: var(--clr-white);
+  align-items: center;
+  justify-content: space-around;
+  text-transform: none;
+  border-bottom: none;
+}
+
+.header-title_logo {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.header-title p {
+  font-size: var(--font-md);
+  font-weight: 300;
+  line-height: 0.75rem;
+}
+
+.header-title h1 {
+  font-family: Unbounded;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.header-first_grid {
+  display: grid;
+  grid-template-columns: 432px 157px 248px 200px 150px 67px;
+  grid-template-rows: 68px;
+}
+
+.header-second_grid {
+  display: grid;
+  grid-template-columns: 432px 291px 208px 134px 189px;
+  grid-template-rows: 68px;
+}
+
+.header-second_grid > a:nth-child(1) {
+  border: var(--border-sm) var(--clr-white) solid;
+  border-top: none;
+}
+
+ .header-first_grid > a:nth-child(2) {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.header-first_grid > a:nth-child(3) {
+  border-right: none;
+  border-bottom: none;
+}
+
+.header-first_grid > a:nth-child(4) {
+  border-right: none;
+  border-bottom: none;
+}
+
+.header-first_grid > a:nth-child(5) {
+  border-right: none;
+  border-bottom: none;
+}
+
+.header-first_grid > a:nth-child(6) {
+  border-bottom: none;
+}
+
+.header-second_grid > a:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+
+.header-second_grid > a:nth-child(4) {
+  border-right: none;
+  border-left: none;
+}
+
+@media (max-width: 1280px) {
+  .header-first_grid {
+  grid-template-columns: 370px 119px 188px 152px 114px 51px;
+  grid-template-rows: 52px;
+}
+
+.header-second_grid {
+  grid-template-columns: 370px 222px 157px 102px 143px;
+  grid-template-rows: 52px;
+}
+
+
+.header-title {
+  padding-top: 3rem; }
+}
+
+@media (max-width: 1024px) {
+  .header-first_grid {
+  grid-template-columns: 270px 98px 154px 125px 94px 41px;
+  grid-template-rows: 43px;
+}
+
+.header-second_grid {
+  grid-template-columns: 270px 182px 129px 83px 118px;
+  grid-template-rows: 43px;
+}
+
+.header-title {
+  padding-top: 2.7rem;
+}
+
+div a {
+  font-size: var(--font-xs);
+}
+
+.header-title p {
+  font-size: var(--font-sm);
+}
+
+.header-title h1 {
+  font-size: var(--font-2md);
+}
+}
+
+@media (max-width: 768px) {
+  .header-first_grid {
+  grid-template-columns: 225px 82px 128px 104px 78px 34px;
+  grid-template-rows: 36px;
+}
+
+.header-second_grid {
+  grid-template-columns: 225px 152px 108px 69px 97px;
+  grid-template-rows: 36px;
+}
+
+
+.header-title {
+  padding-top: 2.3rem;
+}
+
+div a {
+  font-size: var(--font-xs);
+}
+
+.header-title p {
+  font-size: var(--font-sm);
+}
+
+.header-title h1 {
+  font-size: var(--font-md);
+}
+
+}
+
+</style>
