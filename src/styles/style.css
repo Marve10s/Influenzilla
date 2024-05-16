@@ -3,11 +3,19 @@
 
 :root {
   --clr-white: #ffffff;
+  --gradient: linear-gradient(
+    138.65deg,
+    rgb(198, 241, 247),
+    rgb(249, 131, 233),
+    rgb(184, 119, 255),
+    rgb(194, 233, 205)
+  );
   --font-xs: 0.45rem;
   --font-sm: 0.55rem;
   --font-md: 0.75rem;
   --font-2md: 1rem;
   --font-lr: 1.5rem;
+  --font-xl: 1.69rem;
   --font-2xl: 2rem;
   --font-3xl: 3rem;
   --font-4xl: 4rem;
@@ -15,6 +23,7 @@
 
 body {
   background-image: url(/public/header_background.png);
+  z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: Inter Tight;
@@ -29,6 +38,15 @@ body {
 
 .section {
   margin-top: 5rem;
+}
+
+.gradient {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: Unbounded;
 }
 
 @media (max-width: 1536px) {
